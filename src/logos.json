@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "image": "./assets/img/braves.gif"
+    },
+    {
+        "id": 2,
+        "image": "./assets/img/brewers.png"
+    },
+    {
+        "id": 3,
+        "image": "./assets/img/cardinals.gif"
+    },
+    {
+        "id": 4,
+        "image": "./assets/img/cubs.png"
+    }   
+]
