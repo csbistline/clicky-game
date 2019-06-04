@@ -8,7 +8,7 @@ import logos from './logos.json'
 
 class App extends Component {
   state = {
-    message: "You have guessed something...",
+    message: "Click on a logo to begin",
     correct: 0,
     topScore: 0,
     logos,
