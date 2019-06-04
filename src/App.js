@@ -32,27 +32,32 @@ class App extends Component {
 
     // check if the picked ID is in the chosen list, update scores
     if (chosenArr.includes(id)) {
-        // do stuff
-        this.setState({ 
-          correct: 0, 
-          chosen: [], 
-          message: "You picked the same logo twice! Game Over!"
-        })
+      // do stuff
+      this.setState({
+        correct: 0,
+        chosen: [],
+        message: "You picked the same logo twice! Game Over!"
+      })
     } else {
       // push value to temp array
       chosenArr.push(id);
-      this.setState({ 
+      this.setState({
         chosen: chosenArr,
-        message: "You guessed correctly! Pick again!" })    
+        message: "You guessed correctly! Pick again!"
+      })
       // update scores
       this.setState((state) => ({
         correct: state.correct + 1,
-      }));
-    }
-
-    // check for new high score -- this is not updating before state.correct is set
-    if (this.state.correct > this.state.topScore) {
-      this.setState({ topScore: this.state.correct })
+      }), 
+      
+      // callback function, waits until state is set, then compares correct to topScore
+      () => {
+        if (this.state.correct > this.state.topScore) {
+          this.setState({
+            topScore: this.state.correct
+          })
+        }
+      });
     }
 
     // randomize logos again
