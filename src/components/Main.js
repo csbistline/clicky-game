@@ -4,20 +4,7 @@ import Logo from './Logo'
 
 const Main = (props) => {
 
-    let logosArr = (props.logos);
-
-    const randomizeLogos = () => {
-        logosArr.sort((a, b) => {
-            return 0.5 - Math.random()
-        });
-        console.log(logosArr);
-    }
-
-    const pickLogo = id => {
-        console.log(id);
-    }
-
-    randomizeLogos()
+    let logosArr = props.randomizeLogos(props.logos);
 
     return (
         <Container className="d-flex flex-wrap justify-content-around">
@@ -25,7 +12,7 @@ const Main = (props) => {
                 <div
                     className="m-2"
                     key={logo.id}
-                    onClick={() => pickLogo(logo.id)}
+                    onClick={() => props.pickLogo(logo.id)}
                 >
                     <Logo
                         id={logo.id}
