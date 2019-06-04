@@ -14,5 +14,53 @@
     {
         "id": 4,
         "image": "./assets/img/cubs.png"
-    }   
+    },
+    {
+        "id": 5,
+        "image": "./assets/img/dbacks.png"
+    },
+    {
+        "id": 6,
+        "image": "./assets/img/dodgers.png"
+    },
+    {
+        "id": 7,
+        "image": "./assets/img/giants.gif"
+    },
+    {
+        "id": 8,
+        "image": "./assets/img/marlins.png"
+    },
+    {
+        "id": 9,
+        "image": "./assets/img/mets.png"
+    },
+    {
+        "id": 10,
+        "image": "./assets/img/nationals.png"
+    },
+    {
+        "id": 11,
+        "image": "./assets/img/padres.png"
+    },
+    {
+        "id": 12,
+        "image": "./assets/img/phillies.png"
+    },
+    {
+        "id": 13,
+        "image": "./assets/img/pirates.png"
+    },
+    {
+        "id": 14,
+        "image": "./assets/img/reds.png"
+    },
+    {
+        "id": 15,
+        "image": "./assets/img/rockies.png"
+    },
+    {
+        "id": 16,
+        "image": "./assets/img/astros.png"
+    }
 ]
