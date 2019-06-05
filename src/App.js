@@ -15,7 +15,7 @@ class App extends Component {
     chosen: []
   }
 
-  randomizeLogos = (logos) => {
+  randomizeLogos = logos => {
     let logosArr = [...logos]
     logosArr.sort((a, b) => {
       return 0.5 - Math.random()

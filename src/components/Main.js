@@ -2,7 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container'
 import Logo from './Logo'
 
-const Main = (props) => {
+const Main = props => {
 
     let logosArr = props.randomizeLogos(props.logos);
 
@@ -18,7 +18,6 @@ const Main = (props) => {
                         id={logo.id}
                         key={logo.id}
                         image={logo.image}
-
                     />
                 </div>
             )}
